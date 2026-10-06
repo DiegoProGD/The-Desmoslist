@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Desmoslist</title>
+
+  <!-- Desmos-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #1A4A2F; /* lighter dark green */
+      color: #F0FFF4;
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      counter-reset: levelCounter;
+    }
+
+    header {
+      background: #145C39; /* lighter header green */
+      padding: 25px;
+      text-align: center;
+      border-bottom: 2px solid #4CFF9C; /* bright accent */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      color: #4CFF9C; /* bright green */
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.1rem;
+      color: #B8FFD8; /* soft mint */
+    }
+
+    main {
+      max-width: 900px;
+      margin: 35px auto;
+      padding: 0 20px 50px;
+    }
+
+    .info-box {
+      background: #145C39;
+      border: 1px solid #4CFF9C;
+      padding: 18px 22px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      color: #E3FFE9;
+    }
+
+    .level-section {
+      background: #145C39;
+      border: 2px solid #4CFF9C;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      counter-increment: levelCounter;
+    }
+
+    .level-title::before {
+      content: "#" counter(levelCounter) " — ";
+      font-weight: 700;
+      color: #B8FFD8;
+    }
+
+    .level-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #4CFF9C;
+      margin-bottom: 10px;
+    }
+
+    .property {
+      margin: 6px 0;
+      font-size: 1.1rem;
+    }
+
+    .property span {
+      font-weight: 700;
+      color: #B8FFD8;
+    }
+
+    a {
+      color: #B8FFD8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>The Desmoslist</h1>
+    <p>A Fan-Made List For The Popular Graphing Calculator, Desmos.</p>
+  </header>
+
+  <main>
+
+    <section class="info-box">
+      <strong>About:</strong> All Geometry Dash Levels Made In Desmos, Ranked In One Page.
+    </section>
+
+    <!-- TEMPLATE (copy/paste this to add new levels) -->
+    <!--
+    <section class="level-section">
+      <div class="level-title">Level Name Here</div>
+      <div class="property"><span>Creator:</span> CreatorName</div>
+      <div class="property"><span>Graph Link:</span>
+        <a href="https://www.desmos.com/calculator/EXAMPLE" target="_blank">Open Graph</a>
+      </div>
+    </section>
+    -->
+
+    <!-- LEVEL 1 -->
+    <section class="level-section">
+      <div class="level-title">Desmos Slaughterhouse</div>
+      <div class="property"><span>Creator:</span> GraphMaster</div>
+      <div class="property"><span>Graph Link:</span>
+        <a href="https://www.desmos.com/calculator/EXAMPLE1" target="_blank">Open Graph</a>
+      </div>
+    </section>
+
+    <!-- LEVEL 2 -->
+    <section class="level-section">
+      <div class="level-title">Desmos Acheron</div>
+      <div class="property"><span>Creator:</span> ParabolaGuy</div>
+      <div class="property"><span>Graph Link:</span>
+        <a href="https://www.desmos.com/calculator/EXAMPLE2" target="_blank">Open Graph</a>
+      </div>
+    </section>
+
+    <!-- LEVEL 3 -->
+    <section class="level-section">
+      <div class="level-title">Desmos Firework</div>
+      <div class="property"><span>Creator:</span> SlopeDude</div>
+      <div class="property"><span>Graph Link:</span>
+        <a href="https://www.desmos.com/calculator/EXAMPLE3" target="_blank">Open Graph</a>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
