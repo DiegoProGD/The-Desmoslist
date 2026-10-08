@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>The Desmoslist</title>
 
-  <!-- Desmos-like font -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -31,10 +30,20 @@
       font-weight: 700;
     }
 
-    header p {
-      margin: 8px 0 0;
+    .discord-button {
+      display: inline-block;
+      margin-top: 12px;
+      background: #4CFF9C;
+      color: #145C39;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
       font-size: 1.1rem;
-      color: #B8FFD8;
+    }
+
+    .discord-button:hover {
+      background: #7CFFD0;
     }
 
     main {
@@ -43,17 +52,7 @@
       padding: 0 20px 50px;
     }
 
-    .info-box {
-      background: #145C39;
-      border: 1px solid #4CFF9C;
-      padding: 18px 22px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      font-size: 1.05rem;
-      color: #E3FFE9;
-    }
-
-    .level-section {
+    .level-block {
       background: #145C39;
       border: 2px solid #4CFF9C;
       border-radius: 10px;
@@ -64,33 +63,20 @@
 
     .level-title::before {
       content: "#" counter(levelCounter) " — ";
-      font-weight: 700;
       color: #B8FFD8;
+      font-weight: 700;
     }
 
     .level-title {
       font-size: 1.6rem;
       font-weight: 700;
       color: #4CFF9C;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
-    .property {
-      margin: 6px 0;
+    .creator {
       font-size: 1.1rem;
-    }
-
-    .property span {
-      font-weight: 700;
-      color: #B8FFD8;
-    }
-
-    .cover-image {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      margin-top: 12px;
-      border: 2px solid #4CFF9C;
+      color: #E3FFE9;
     }
 
     a {
@@ -108,36 +94,28 @@
 
   <header>
     <h1>The Desmoslist</h1>
-    <p>A Fan-Made List For The Popular Graphing Calculator, Desmos.</p>
+
+    <!-- ⭐ DISCORD BUTTON (paste your invite link below) -->
+    <a class="discord-button" href="https://discord.gg/JPB42zf3N" target="_blank">
+      Open Discord Server
+    </a>
   </header>
 
   <main>
 
-    <section class="info-box">
-      <strong>About:</strong> All Geometry Dash Levels Made In Desmos, Ranked In One Page.
-    </section>
-
-    <!-- TEMPLATE (copy/paste this to add new levels) -->
+    <!-- TEMPLATE -->
     <!--
-    <section class="level-section">
-      <div class="level-title">Level Name Here</div>
-      <div class="property"><span>Creator:</span> CreatorName</div>
-      <div class="property"><span>Graph Link:</span>
-        <a href="https://www.desmos.com/calculator/EXAMPLE" target="_blank">Open Graph</a>
-      </div>
-      <img class="cover-image" src="IMAGE_URL_HERE" alt="Level Cover">
-    </section> Open Graph , Graph Link
+    <div class="level-block">
+      <div class="level-title"><a href="YOURFILE.html">Level Name Here</a></div>
+      <div class="creator">by CreatorName</div>
+    </div>
     -->
 
     <!-- LEVEL 1 -->
-    <section class="level-section">
-      <div class="level-title">Tidal Wave But In Desmos</div>
-      <div class="property"><span>Creator:</span> whitecaplol</div>
-      <div class="property"><span>YouTube Link:</span>
-        <a href="https://www.youtube.com/watch?v=knYunXNY88s" target="_blank">Open YouTube Video</a>
-      </div>
-      <img class="https://cdn.discordapp.com/attachments/1556019748985380888/1557539992073535578/image.png?ex=6ac82ba7&is=6ac6da27&hm=7579cd4b5e5b77066f93fa4f9b5ab33ce183def88d17685c9b978b1455e50c1b">
-    </section>
+    <div class="level-block">
+      <div class="level-title"><a href="heliopolisbythedesmosguy.html">[Top 1] Heliopolis 100%</a></div>
+      <div class="creator">by The Desmos Guy</div>
+    </div>
 
   </main>
 </body>
